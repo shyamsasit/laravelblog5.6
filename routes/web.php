@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('posts', 'PostsController')->middleware('auth');
+Route::resource('posts', 'PostsController');
 
 
 Auth::routes();
